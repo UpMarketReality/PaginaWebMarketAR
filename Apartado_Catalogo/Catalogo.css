@@ -1,0 +1,417 @@
+/* --- RESETEO BÁSICO --- */
+/* Reseteo de márgenes, paddings y box-sizing para no cambiar acorde al navegador*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- 1. Encabezado --- */
+.Encabezado {
+    display: flex;
+    background-color: #EAFFFD;
+    padding: 20px 0 20px 0;
+    justify-content: center;
+}
+.Encabezado_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Encabezado: Lado Izquierda (Links) */
+.Encabezado_links {
+    display: flex;
+    align-items: center;
+    margin-left: 30px; 
+}
+.Encabezado_links a {
+    text-transform: none;
+    text-decoration: none;
+    margin-right: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+
+/* Encabezado: Central (Logo y links) */
+.Encabezado_logo {
+    display: flex;
+    align-items: center; 
+    margin: 0 40px 0 40px;
+}
+.Encabezado_logo a {
+    text-decoration: none;
+    font-family: 'Righteous', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    display: flex; 
+    align-items: center;
+}
+.logo-text--market {
+    color: #004A46; 
+}
+.logo-text--ar {
+    color: #5AD3B4; 
+}
+
+/* Encabezado: Lado Derecha (Iconos) */
+.Encabezado_icons {
+    display: flex;
+    align-items: center;
+    margin-right: 30px; 
+}
+.Encabezado_icons a {
+    width: 60px;
+    height: 60px;
+    margin-right: 80px;
+}
+/* Asegurare que las imagenes no sufran deformasiones */
+.Encabezado_icons a img {
+    width: 100%;
+    height: 100%;
+}
+
+/* --- 1.1 TITULO INTRODUCTORIO--- */
+.TituloIntroducctorio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 60PX;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+
+
+/* --- 2. BARRA DE BÚSQUEDA --- */
+.BarraBusqueda {
+    display: flex;
+    margin: 10px auto;
+    border: 1.5px solid #000;
+    border-radius: 25px;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%; 
+}
+.BarraBusqueda_boton {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 30px; 
+}
+.BarraBusqueda_boton img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.BarraBusqueda_entrada {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+}
+.BarraBusqueda_selector {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 30px;
+    margin-left: auto;
+    width: 20%;
+}
+
+
+/* --- 3. SECCIÓN DE FAVORITOS --- */
+.Favoritos {
+    display: flex;
+    background: transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 15px;
+    width: 80%;
+}
+
+/* Encabezado de Favoritos */
+.Favoritos_Encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.Favoritos_titulo {
+    font-family: 'Righteous', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    margin-right: 50px;
+}
+.Favoritos_selector {
+    background-color: #5AD3B4;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px; 
+    width: 20%;
+}
+
+/* Contenedor de Tarjetas General */
+.Favoritos_contenedor {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 15px; 
+}
+
+/* --- 4. CARTA DE DISEÑO (Componente Reutilizable para otras de mis secciones) --- */
+.CartaDiseño {
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.CartaDiseño_fecha {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 0px;
+    font-weight: bold;
+
+}
+.CartaDiseño_reseña {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #5AD3B4;
+    font-weight: bold;
+    margin: 0;
+}
+.CartaDiseño_product_nombre {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
+}
+.CartaDiseño_precio {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    color: #004A46;
+    margin: 0;
+    font-weight: bold;
+}
+.CartaDiseño_IA {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
+    font-weight: bold;
+}
+.CartaDiseño_iamgen-contenedor {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+
+.CartaDiseño_iamgen {
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+}
+/* .CartaDiseño p {
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+    color: #000;
+    margin: 5px 0;
+} */
+.CartaDiseño_botones-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.CartaDiseño_boton {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 10px; 
+}
+.CartaDiseño_boton img {
+    width: 20px;
+    height: 20px;
+}
+
+.CartaDiseño_agregarCarrito {
+    background-color: #5AD3B4;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.CartaDiseño_agregarCarrito:hover {
+    background-color: #48b19a; /* Color ligeramente más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de "levantamiento" */
+}
+
+
+/* --- 5. PIE DE PÁGINA --- */
+.PiePagina {
+  background: #ffffff;
+  color: #000000;
+  margin-top: 40px;
+  padding: 24px 16px;
+}
+.PiePagina_contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;  
+    gap: 5px;
+}
+.PiePagina_logo h3 { 
+    width: 60px;
+    height: 60px; 
+}
+.PiePagina_empresa h4,
+.PiePagina_contacto h4 {
+    margin: 0 0 6px;
+}
+.PiePagina_empresa ul,
+.PiePagina_contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.PiePagina_empresa a,
+.PiePagina_contacto a {
+    color: #000000;
+    text-decoration: none;
+}
+.PiePagina_direccion {
+    max-width: 1100px;
+    margin: auto 0;
+    padding: 0px;
+    color: #000000;
+    font-size: 0.95rem;
+}
+
+
+/* --- 6. COSITAS QUE AUN NO HE ORDENADO --- */
+.Diseños {
+    padding: 20px 0;
+    border: 1.5px solid #000;
+    border-radius: 30px;
+    width: 40%;
+    margin: 0 auto;
+}
+.Pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: transparent;
+    max-width: fit-content;
+    margin: 20px auto;
+}
+.Pagina a,
+.Pagina span {
+    color: #333;
+    text-decoration: none;
+    padding: 2px 5px;
+    transition: color 0.2s;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: transparent;
+}
+.Pagina_link--active {
+    color: #000000;
+}
+.Pagina_link--previous,
+.Pagina_link--next {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* --- 7. SISTEMA DE PUNTUACIÓN VERTICAL (Rating_Vertical) --- */
+
+/* Contenedor principal para organizar las estrellas verticalmente */
+.Rating_Vertical {
+    display: flex;
+    flex-direction: column; /* CLAVE: Apila los elementos verticalmente */
+    direction: rtl; /* CLAVE: Invierte el orden de los elementos (de abajo hacia arriba) */
+    unicode-bidi: bidi-override; /* Permite la inversión para la lógica del rating */
+    
+    /* Centra el sistema dentro de su contenedor padre */
+    align-items: center; 
+    
+    /* Espaciado para que no esté pegado a otros elementos */
+    padding: 10px;
+}
+
+/* Ocultar los botones de radio (input) */
+.Rating_Vertical input[type="radio"] {
+    display: none;
+}
+
+/* Estilo por defecto de las estrellas (vacías) */
+.Rating_Vertical label {
+    font-size: 28px; /* Tamaño de la estrella */
+    color: #ccc; /* Color de la estrella vacía */
+    cursor: pointer;
+    transition: color 0.2s;
+    
+    /* Dibuja la estrella usando el código Unicode */
+    /* Aquí colocamos el contenido explícitamente, sin pseudoclases */
+    content: '★'; /* Nota: Aunque no es un pseudoelemento, muchos navegadores lo interpretan, 
+                     o si no, el CSS fallaría aquí. Usaremos un truco de fuente. */
+}
+/* Truco: Si no quieres usar la pseudoclase ::before, 
+   tendrás que colocar el símbolo de estrella (★) DENTRO de cada <label> en el HTML: */
+.Rating_Vertical label::before {
+    content: '★';
+}
+
+
+/* Lógica de Llenado: Pinta todas las estrellas seleccionadas y las que están ANTES de ella */
+/* Cuando un radio está 'checked', selecciona a todos los 'labels' hermanos que le siguen (~) */
+.Rating_Vertical input:checked ~ label,
+.Rating_Vertical label:hover,
+.Rating_Vertical label:hover ~ label {
+    color: #5AD3B4; /* Verde/Turquesa (Color de la estrella llena) */
+}
