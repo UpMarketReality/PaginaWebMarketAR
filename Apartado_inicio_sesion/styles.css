@@ -1,0 +1,190 @@
+/* Estilo general para todo el cuerpo */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color:#eafffd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+    /* Parte izquierda del navegador */
+    .nav_izquierda a {
+        text-decoration: none;
+        color: #0d4f3e;
+        margin-right: 15px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    /* Parte central del navegador */
+
+    .logo {
+        text-align: center;
+    }
+        .logo img {
+            width: 75px;
+            vertical-align: middle;
+        }
+        .logo h1 {
+            display: inline-block;
+            font-size: 20px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+            .pt1 {
+                color: #004a46;
+            }
+            .pt2 {
+                color: #5ad3b4;
+                margin-left: -5px;
+            }
+        
+
+    /* Parte derecha del navegador */
+    .nav_derecha img {
+        width: 35px;
+        margin-left: 15px;
+        vertical-align: middle;
+    }
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: stretch;
+    gap: 32px;
+    width: 70%;
+    max-width: 1200px; 
+    margin: 40px auto; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+    /* Imagen principal - parte izquierda */
+    .imagen_principal {
+        flex: 2.2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+        .imagen_principal img {
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+    /* Caja de acceso - parte derecha */
+    .acceso {
+        flex: 0.9;
+        max-width: 420px;
+        width: 100%;
+        background: #ffffff;
+        border-radius: 12px; 
+        padding: 28px;  
+        box-shadow: 0 8px 20px rgba(0,0,0,0.06); 
+        display: flex;           
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: stretch; 
+        box-sizing: border-box;
+        border: 1px solid #000;
+        max-height: 70vh;
+        overflow: auto; 
+        line-height: 1.5; 
+    }
+
+        .titulo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+            .titulo h2 {
+                font-size: 25px;
+                margin: 0;
+                line-height: 1.05;
+            }
+            .titulo img {
+                width: 96px;
+                height: 96px;
+                object-fit: contain;
+            }
+
+        .acceso p,
+        .acceso a,
+        .acceso label,
+        .acceso input,
+        .acceso button {
+            line-height: 1.6;
+        }
+        
+
+        /* Formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 0 0 12px 0;
+        }
+            input[type="email"] {
+                padding: 10px 12px;
+                border-radius: 15px;
+                border: 1px solid #000;
+                font-size: 14px;
+            }
+            .btn_continuar {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 12px 16px;
+                border-radius: 15px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+        .acceso > a:first-of-type { 
+            margin-bottom: 12px; 
+            color:#888; 
+            text-align:center; 
+            font-size:12px; 
+            display:inline-block; 
+        }
+
+        .crear_cuenta p { 
+            margin-bottom: 8px; 
+            color:#333; 
+            font-weight: bold; 
+        }
+        .btn_personal, .btn_empresa {
+            width: 100%;
+            padding: 10px 14px;
+            border-radius: 15px;
+            border: 0;
+            font-weight: 700;
+            cursor: pointer;
+            margin-bottom: 8px;
+            background-color: black; 
+            color: white; 
+        }
+
+        .acceso > a:last-of-type {
+            color:#888;
+            font-size:12px; 
+            text-align:center; 
+            display:block; 
+            margin-top:8px; 
+        }

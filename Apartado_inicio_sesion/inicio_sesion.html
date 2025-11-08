@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Encabezado de la pagina-->
+    <header>
+        
+        <!--Parte izquierda del encabezado-->
+        <nav class = "nav_izquierda">
+            <a href="#">Empieza a Crear</a>
+            <a href="#">Ver catalogo</a>
+            <a href="#">Mis diseños</a>
+        </nav>
+        
+        <!--Parte media del encabezado-->
+        <div class = "logo">
+            <img src="imagenes/logo_marketAR.png" alt="Logo de MarketAR">
+            <h1>
+                <span class="pt1">MARKET</span>
+                <span class="pt2">AR</span>
+            </h1>
+        </div>
+        
+        <!--Parte derecha del encabezado-->
+        <nav class = "nav_derecha">
+            <a href="#"><img src="imagenes/icono_descargarApp.png" alt="Descargar la app"></a>
+            <a href="#"><img src="imagenes/icono_perfil_vendedor.png" alt="Perfil del vendedor"></a>
+            <a href="#"><img src="imagenes/icono_carrito.png" alt="Ver carrito de compras"></a>
+        </nav>
+        
+    </header>
+
+    <!--Contenido principal de la pagina-->
+    <main>
+
+        <!--Imagen principal en la parte derecha-->
+        <section class = "imagen_principal">
+            <img src="imagenes/vista_preeliminarRA.png" alt="Vista preeliminar de MarketAR">
+        </section>
+
+        <!--Seccion de inicio de sesion en la parte izquierda-->
+        <section class="acceso">
+
+            <div class="titulo">
+                <h2>Inicio de sesion o crear una cuenta nueva</h2>
+                <img src="imagenes/logo_marketAR.png" alt="Logo de MarketAR">
+            </div>
+            
+            <!--Formulario-->
+            <form action="#" method="post">
+                <p>Introduce tu correro electronico para recibir un codigo de un solo uso</p>
+                <label for="correo">Correo electronico: </label>
+                <input type="email" name="correo" id="correo" placeholder="abecede@correo.com">
+                <button type="submit" class="btn_continuar">Continuar</button>
+            </form>
+            
+            <a href="#">Inicia sesion con contraseña</a>
+
+            <!--Opciones para crear una cuenta-->
+            <div class="crear_cuenta">
+                <p>
+                ¿No tienes una cuenta en MarketAR?<br>
+                Crea una ahora mismo:
+                </p>
+                <button class="btn_personal">Para mi</button>
+                <button class="btn_empresa">Para mi empresa</button>
+            </div>
+            
+
+            <!--Politicas de privacidad-->
+            <a href="#">MarketAR.es - Política de cookies y Política de privacidad</a>
+        </section>
+    </main>
+</body>
+</html>
