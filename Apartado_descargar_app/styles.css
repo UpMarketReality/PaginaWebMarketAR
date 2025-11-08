@@ -1,0 +1,46 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.anuncio {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    gap: 40px;
+    background-color: blue;
+    padding: 10px 30px;
+    
+}
+    .Titulo {
+        background-color: aquamarine;
+        width: 550px;
+    }
+    .anuncio img {width: 650px;}
+    .Titulo h1 {
+        font-size: 60px;
+    }
+    .disponibilidad {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .disponibilidad h2 {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+        .disponibilidad p {
+            font-size: 20px;
+        }
+
+.caracteristicas {
+    background-color: bisque;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+}
+    .info_comprador {
+        background-color: aquamarine;
+        padding: 10px 30px;
+    }
