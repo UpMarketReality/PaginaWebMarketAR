@@ -1,6 +1,6 @@
 # PaginaWebMarketAR
 
-Este proyecto consiste en el desarrollo de una Landing Page para presentar la solución digital MarketAR.
+Este proyecto consiste en el desarrollo de una Pagina Web para presentar la solución digital MarketAR.
 
 ## Autores
 - Carhuavilca Vidal Junior Alexander
