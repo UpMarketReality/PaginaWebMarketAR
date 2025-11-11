@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <!--David: Header agregado, de momento es la forma que encontre para hacera -->
+    <header class="Nav-sup">
+        <div class="Nav-sup-der">
+            <a href="#"><img src="assets/imagenes/Mundo.png">ES/Español</a>
+        </div>
+        <ul class="Nav-sup-izq">
+            <li><a href="quiero_vender.htmnl">Quiero vender</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+            <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+            <li><a href="contactenos.html">Contactenos</a></li>
+        </ul>
+    </header>
+    <!--Fin agregado por David-->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets/imagenes/LOGO_MARKETAR2.jpeg.png" alt="MarketAR Logo"></a>
+        </div>
+        <nav class="nav-links">
+            <a href="crear.html">Empieza a Crear</a>
+            <a href="catalogo.html">Ver Catálogo</a>
+            <a href="diseño.html">Mis diseños</a>
+        </nav>
+        <div class="icons">
+            <a href="descarga_app.html">
+            <img src="assets/imagenes/descarga.png" alt="Buscar">
+            </a>
+            <a href="inicia_sesion.html">
+            <img src="assets/imagenes/IniciaSesion.png" alt="Usuario">
+            </a>
+            <a href="carrito.html">
+                <img src="assets/imagenes/carrito.png" alt="Carrito">
+            </a>
+            
+        </div>
+    </header>
+
+    <!--Contenido principal de la pagina-->
+    <main>
+
+        <!--Imagen principal en la parte derecha-->
+        <section class = "imagen_principal">
+            <img src="imagenes/vista_preeliminarRA.png" alt="Vista preeliminar de MarketAR">
+        </section>
+
+        <!--Seccion de inicio de sesion en la parte izquierda-->
+        <section class="acceso">
+
+            <div class="titulo">
+                <h2>Inicio de sesion o crear una cuenta nueva</h2>
+                <img src="imagenes/logo_marketAR.png" alt="Logo de MarketAR">
+            </div>
+            
+            <!--Formulario-->
+            <form action="#" method="post">
+                <p>Introduce tu correro electronico para recibir un codigo de un solo uso</p>
+                <label for="correo">Correo electronico: </label>
+                <input type="email" name="correo" id="correo" placeholder="abecede@correo.com">
+                <button type="submit" class="btn_continuar">Continuar</button>
+            </form>
+            
+            <a href="#">Inicia sesion con contraseña</a>
+
+            <!--Opciones para crear una cuenta-->
+            <div class="crear_cuenta">
+                <p>
+                ¿No tienes una cuenta en MarketAR?<br>
+                Crea una ahora mismo:
+                </p>
+                <button class="btn_personal">Para mi</button>
+                <button class="btn_empresa">Para mi empresa</button>
+            </div>
+            
+
+            <!--Politicas de privacidad-->
+            <a href="#">MarketAR.es - Política de cookies y Política de privacidad</a>
+        </section>
+    </main>
+        <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-column">
+            <div class="footer-logo">
+                <img src="assets/imagenes/Logo.png" alt="MarketAR Logo">
+                <h3>MarketAR</h3>
+            </div>
+            <p>
+                Es una empresa peruana dedicada a la comercialización principal de productos para el hogar.
+                Siempre dispuestos a suplir las necesidades de nuestros clientes.
+            </p>
+            <p class="address">
+                Carrera 30 # 14 - 76 | El Jardín Neiva - Huila <br>
+                (+57) 318 865 6586 | ventas@marketar.com.co
+            </p>
+            </div>
+        
+            <div class="footer-column">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Líderes</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-column">
+                <h4>Contáctanos</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </footer>
+
+</body>
+</html>
