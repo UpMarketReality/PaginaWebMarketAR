@@ -1,0 +1,207 @@
+/*------------- HEADER -------------*/
+header {
+    background-color:#eafffd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+    /* Parte izquierda del navegador */
+    .nav_izquierda a {
+        text-decoration: none;
+        color: #0d4f3e;
+        margin-right: 15px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    /* Parte central del navegador */
+
+    .logo {
+        text-align: center;
+    }
+        .logo img {
+            width: 75px;
+            vertical-align: middle;
+        }
+        .logo h1 {
+            display: inline-block;
+            font-size: 20px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+            .pt1 {
+                color: #004a46;
+            }
+            .pt2 {
+                color: #5ad3b4;
+                margin-left: -5px;
+            }
+        
+
+    /* Parte derecha del navegador */
+    .nav_derecha img {
+        width: 35px;
+        margin-left: 15px;
+        vertical-align: middle;
+    }
+
+/*------------- Main -------------*/
+main {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+main h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.anuncio {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    gap: 40px;
+    padding: 10px 30px;
+    margin-bottom: 1.5rem;
+    
+}
+    .Titulo {width: 550px;}
+    .anuncio img {width: 650px;}
+    .Titulo h1 {
+        font-size: 60px;
+    }
+    .dise1 {color: #3f9b83;}
+    .dise2 {color: #5ad3b4;}
+    .disponibilidad {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .disponibilidad h2 {
+            font-size: 25px;
+            margin-right: 8px;
+        }
+        .disponibilidad p {
+            color: #787878;
+            font-size: 25px;
+        }
+
+.caracteristicas {
+    background-color: #eafffd;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width: 1500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    padding: 10px 1px;
+}
+
+    .caracteristicas h2 {
+        font-size: 30px;
+        color: #3f9b83;
+        -webkit-text-stroke: 1px black;
+        text-align: center;
+    }
+    .caracteristicas span {color: #3f9b83; font-weight: bold;}
+    .caracteristicas li {
+        font-size: 20px;
+    }
+    .info_comprador {
+        border-right: 1.5px solid black;
+        margin-right: 20px;
+        padding-right: 40px;
+    }
+
+.comentarios {
+    display: flex;
+    gap: 20px;
+}
+    .com1 , .com2 , .com3 , .com4{
+        padding: 10px 20px;
+        width: 650px;
+        height: 220px;
+        border-radius: 20px;
+        border: 1.5px solid #0086c5;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .com1:hover , .com2:hover , .com3:hover , .com4:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+        .perfil1 , .perfil2 , .perfil3 , .perfil4 {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            border-bottom: 1.5px solid #0086c5;
+            
+        }
+        .comentarios img {
+            width: 50px;
+            height: 70px;
+            border-radius: 50%;
+            border: 1.5px solid #0086c5;;
+        }
+
+        .comentarios h3 {
+            font-size: 25px;
+            color: #0086c5;
+        }
+        .estrella_pint {
+            color: gold;
+            font-size: 20px;
+        }
+        .estrella_NOpint {
+            color: gray;
+            font-size: 20px;
+        }
+
+        .comentarios p {
+            font-size: 16px;
+            padding: 5px 1px;
+        }
+
+/*------------- FOOTER -------------*/
+footer {
+    background: #0f172a;
+    color: #e2e8f0;
+    margin-top: 40px;
+    padding: 24px 16px;
+}
+
+.footer-contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+
+.footer-logo h3 { margin: 0 0 6px; }
+
+.footer-empresa h4,
+.footer-contacto h4 {
+    margin: 0 0 6px;
+}
+
+.footer-empresa ul,
+.footer-contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-empresa a,
+.footer-contacto a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+.footer-direccion {
+    max-width: 1100px;
+    margin: 16px auto 0;
+    padding: 0 16px;
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
