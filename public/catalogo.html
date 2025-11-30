@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 
@@ -49,248 +50,255 @@
 
     <main>
         <section class="TituloIntroducctorio">
-            <h1>Catálogo</h1>
-        </section>
+        <h1>Catálogo</h1>
+    </section>
 
-        <section class="BarraBusqueda">
-            <button class="BarraBusqueda_boton">
-                <img src="assets/Imagenes/Bus_Lupa.png" alt="Icono de lupa">
-            </button>
-            <input type="text" class="BarraBusqueda_entrada" placeholder="Buscar...">
-            <select class="BarraBusqueda_selector">
-                <option value="ultimos">Ordenar por los últimos</option>
+    <section class="BarraBusqueda">
+        <button class="BarraBusqueda_boton">
+            <img src="assets/Imagenes/Bus_Lupa.png" alt="Icono de lupa">
+        </button>
+        <input type="text" class="BarraBusqueda_entrada" placeholder="Buscar...">
+        <select class="BarraBusqueda_selector">
+            <option value="ultimos">Ordenar por los últimos</option>
+            <option value="antiguos">Ordenar por los más antiguos</option>
+            <option value="populares">Ordenar por los más populares</option>
+        </select>
+    </section>
+    
+    <section class="Favoritos">
+        <div class="Favoritos_Encabezado">
+            <h1 class="Favoritos_titulo">Lo más novedoso</h1>
+            <select class="Favoritos_selector">
+                <option value="ultimos">Ver todos</option>
                 <option value="antiguos">Ordenar por los más antiguos</option>
                 <option value="populares">Ordenar por los más populares</option>
             </select>
-        </section>
+        </div>
         
-        <section class="Favoritos">
-            <div class="Favoritos_Encabezado">
-                <h1 class="Favoritos_titulo">Lo más novedoso</h1>
-                <select class="Favoritos_selector">
-                    <option value="ultimos">Ver todos</option>
-                    <option value="antiguos">Ordenar por los más antiguos</option>
-                    <option value="populares">Ordenar por los más populares</option>
-                </select>
-            </div>
+        <div class="Favoritos_contenedor">
+            <article class="CartaDiseño">
+                <p class="CartaDiseño_fecha">Autor: Krstll2045</p>
+                <div class="CartaDiseño_iamgen-contenedor">
+                    <img class="CartaDiseño_iamgen" src="assets/imagenes/Fav_Articulo-1.jpg" alt="Imagen del diseño favorito 1">
+                    <button class="view-details" data-product="1">Ver detalles</button>
+                    <div class="CartaDiseño_botones-contenedor">
+                        <p>5.7</p>
+                        <div class="Rating_Vertical">
+                            <input type="radio" name="rating-1" id="star-5" value="5" />
+                            <label for="star-5" title="5 estrellas"></label>
             
-            <div class="Favoritos_contenedor">
-                <article class="CartaDiseño">
-                    <p class="CartaDiseño_fecha">Autor: Krstll2045</p>
-                    <div class="CartaDiseño_iamgen-contenedor">
-                        <img class="CartaDiseño_iamgen" src="assets/imagenes/Fav_Articulo-1.jpg" alt="Imagen del diseño favorito 1">
-                        <div class="CartaDiseño_botones-contenedor">
-                            <p>5.7</p>
-                            <div class="Rating_Vertical">
-                                <input type="radio" name="rating-1" id="star-5" value="5" />
-                                <label for="star-5" title="5 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-4" value="4" />
-                                <label for="star-4" title="4 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-3" value="3" />
-                                <label for="star-3" title="3 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-2" value="2" />
-                                <label for="star-2" title="2 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-1" value="1" />
-                                <label for="star-1" title="1 estrella"></label>
-                            </div>                        
-                        </div>
-                    </div>
-                    <p class="CartaDiseño_reseña">Reseñas 328</p>
-                    <p class="CartaDiseño_product_nombre">ARMARIO BELLA Y LA BESTIA DE MELANINE</p>
-                    <p class="CartaDiseño_precio">Precio: S/1000</p>
-                    <p class="CartaDiseño_IA">IA Aproximación</p>
-                    <buttom class="CartaDiseño_agregarCarrito">
-                        Agregar al carrito
-                    </buttom>
-                </article>
-                
-                <article class="CartaDiseño">
-                    <p class="CartaDiseño_fecha">Autor: Gabrix22</p>
-                    <div class="CartaDiseño_iamgen-contenedor">
-                        <img class="CartaDiseño_iamgen" src="assets/imagenes/Fav_Articulo-2.jpg" alt="Imagen del diseño favorito 2">
-                        <div class="CartaDiseño_botones-contenedor">
-                            <p>5.7</p>
-                            <div class="Rating_Vertical">
-                                <input type="radio" name="rating-1" id="star-5" value="5" />
-                                <label for="star-5" title="5 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-4" value="4" />
-                                <label for="star-4" title="4 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-3" value="3" />
-                                <label for="star-3" title="3 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-2" value="2" />
-                                <label for="star-2" title="2 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-1" value="1" />
-                                <label for="star-1" title="1 estrella"></label>
-                            </div>                        
-                        </div>
-                    </div>
-                    <p class="CartaDiseño_reseña">Reseñas 328</p>
-                    <p class="CartaDiseño_product_nombre">VELADOR RENACENTISTA DE CAOBA</p>
-                    <p class="CartaDiseño_precio">Precio: S/1000</p>
-                    <p class="CartaDiseño_IA">IA Aproximación</p>
-                    <buttom class="CartaDiseño_agregarCarrito">
-                        Agregar al carrito
-                    </buttom>
-                </article>
-                
-                <article class="CartaDiseño">
-                    <p class="CartaDiseño_fecha">Autor: AnaLim8</p>
-                    <div class="CartaDiseño_iamgen-contenedor">
-                        <img class="CartaDiseño_iamgen" src="assets/imagenes/Fav_Articulo-3.jpg" alt="Imagen del diseño favorito 3">
-                        <div class="CartaDiseño_botones-contenedor">
-                            <p>5.7</p>
-                            <div class="Rating_Vertical">
-                                <input type="radio" name="rating-1" id="star-5" value="5" />
-                                <label for="star-5" title="5 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-4" value="4" />
-                                <label for="star-4" title="4 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-3" value="3" />
-                                <label for="star-3" title="3 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-2" value="2" />
-                                <label for="star-2" title="2 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-1" value="1" />
-                                <label for="star-1" title="1 estrella"></label>
-                            </div>                        
-                        </div>
-                    </div>
-                    <p class="CartaDiseño_reseña">Reseñas 68</p>
-                    <p class="CartaDiseño_product_nombre">SILLON - GRTAVITY FALLS</p>
-                    <p class="CartaDiseño_precio">Precio: S/2400</p>
-                    <p class="CartaDiseño_IA">IA Aproximación</p>
-                    <buttom class="CartaDiseño_agregarCarrito">
-                        Agregar al carrito
-                    </buttom>
-                </article>
-
-            </div>
-
-        </section>
-
-        <section class="Favoritos">
-            <div class="Favoritos_Encabezado">
-                <h1 class="Favoritos_titulo">En oferta</h1>
-                <select class="Favoritos_selector">
-                    <option value="ultimos">Ver todos</option>
-                    <option value="antiguos">Ordenar por los más antiguos</option>
-                    <option value="populares">Ordenar por los más populares</option>
-                </select>
-            </div>
+                            <input type="radio" name="rating-1" id="star-4" value="4" />
+                            <label for="star-4" title="4 estrellas"></label>
             
-            <div class="Favoritos_contenedor">
-                <article class="CartaDiseño">
-                    <p class="CartaDiseño_fecha">Autor: Kustkistan</p>
-                    <div class="CartaDiseño_iamgen-contenedor">
-                        <img class="CartaDiseño_iamgen" src="assets/imagenes/Cat_Escritorio-minimalista.jpg" alt="Escritorio minimaliista de cedro">
-                        <div class="CartaDiseño_botones-contenedor">
-                            <p>5.7</p>
-                            <div class="Rating_Vertical">
-                                <input type="radio" name="rating-1" id="star-5" value="5" />
-                                <label for="star-5" title="5 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-4" value="4" />
-                                <label for="star-4" title="4 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-3" value="3" />
-                                <label for="star-3" title="3 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-2" value="2" />
-                                <label for="star-2" title="2 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-1" value="1" />
-                                <label for="star-1" title="1 estrella"></label>
-                            </div>                        
-                        </div>
+                            <input type="radio" name="rating-1" id="star-3" value="3" />
+                            <label for="star-3" title="3 estrellas"></label>
+            
+                            <input type="radio" name="rating-1" id="star-2" value="2" />
+                            <label for="star-2" title="2 estrellas"></label>
+            
+                            <input type="radio" name="rating-1" id="star-1" value="1" />
+                            <label for="star-1" title="1 estrella"></label>
+                        </div>                        
                     </div>
-                    <p class="CartaDiseño_reseña">Reseñas 28</p>
-                    <p class="CartaDiseño_product_nombre">ESCRITORIO MINIMALISTA DE CEDRO</p>
-                    <p class="CartaDiseño_precio">Precio: S/375</p>
-                    <p class="CartaDiseño_IA">IA Aproximación</p>
-                    <buttom class="CartaDiseño_agregarCarrito">
-                        Agregar al carrito
-                    </buttom>
-                </article>
-                
-                <article class="CartaDiseño">
-                    <p class="CartaDiseño_fecha">Autor: JosePa</p>
-                    <div class="CartaDiseño_iamgen-contenedor">
-                        <img class="CartaDiseño_iamgen" src="assets/imagenes/Cat_Stand-escritorio.jpg" alt="Stand para escritorio de pino">
-                        <div class="CartaDiseño_botones-contenedor">
-                            <p>5.7</p>
-                            <div class="Rating_Vertical">
-                                <input type="radio" name="rating-1" id="star-5" value="5" />
-                                <label for="star-5" title="5 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-4" value="4" />
-                                <label for="star-4" title="4 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-3" value="3" />
-                                <label for="star-3" title="3 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-2" value="2" />
-                                <label for="star-2" title="2 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-1" value="1" />
-                                <label for="star-1" title="1 estrella"></label>
-                            </div>                        
-                        </div>
+                </div>
+                <p class="CartaDiseño_reseña">Reseñas 328</p>
+                <p class="CartaDiseño_product_nombre">ARMARIO BELLA Y LA BESTIA DE MELANINE</p>
+                <p class="CartaDiseño_precio">Precio: S/1000</p>
+                <p class="CartaDiseño_IA">IA Aproximación</p>
+                <button class="CartaDiseño_agregarCarrito">
+                    Agregar al carrito
+                </button>
+            </article>
+            
+            <article class="CartaDiseño">
+                <p class="CartaDiseño_fecha">Autor: Gabrix22</p>
+                <div class="CartaDiseño_iamgen-contenedor">
+                    <img class="CartaDiseño_iamgen" src="assets/imagenes/Fav_Articulo-2.jpg" alt="Imagen del diseño favorito 2">
+             
+                    <button class="view-details" data-product="2">Ver detalles</button>
+                    <div class="CartaDiseño_botones-contenedor">
+                        <p>5.7</p>
+                        <div class="Rating_Vertical">
+                            <input type="radio" name="rating-2" id="star-5-2" value="5" />
+                            <label for="star-5-2" title="5 estrellas"></label>
+            
+                            <input type="radio" name="rating-2" id="star-4-2" value="4" />
+                            <label for="star-4-2" title="4 estrellas"></label>
+            
+                            <input type="radio" name="rating-2" id="star-3-2" value="3" />
+                            <label for="star-3-2" title="3 estrellas"></label>
+            
+                            <input type="radio" name="rating-2" id="star-2-2" value="2" />
+                            <label for="star-2-2" title="2 estrellas"></label>
+            
+                            <input type="radio" name="rating-2" id="star-1-2" value="1" />
+                            <label for="star-1-2" title="1 estrella"></label>
+                        </div>                        
                     </div>
-                    <p class="CartaDiseño_reseña">Reseñas 8</p>
-                    <p class="CartaDiseño_product_nombre">STAND PARA ESCRITORIO DE PINO</p>
-                    <p class="CartaDiseño_precio">Precio: S/200</p>
-                    <p class="CartaDiseño_IA">IA Aproximación</p>
-                    <buttom class="CartaDiseño_agregarCarrito">
-                        Agregar al carrito
-                    </buttom>
-                </article>
-                
-                <article class="CartaDiseño">
-                    <p class="CartaDiseño_fecha">Autor: Youname</p>
-                    <div class="CartaDiseño_iamgen-contenedor">
-                        <img class="CartaDiseño_iamgen" src="assets/imagenes/Cat_Mouse-pad.jpg" alt="Mousepad minimaliistade cuero sintético">
-                        <div class="CartaDiseño_botones-contenedor">
-                            <p>5.7</p>
-                            <div class="Rating_Vertical">
-                                <input type="radio" name="rating-1" id="star-5" value="5" />
-                                <label for="star-5" title="5 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-4" value="4" />
-                                <label for="star-4" title="4 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-3" value="3" />
-                                <label for="star-3" title="3 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-2" value="2" />
-                                <label for="star-2" title="2 estrellas"></label>
-                
-                                <input type="radio" name="rating-1" id="star-1" value="1" />
-                                <label for="star-1" title="1 estrella"></label>
-                            </div>                        
-                        </div>
+                </div>
+                <p class="CartaDiseño_reseña">Reseñas 328</p>
+                <p class="CartaDiseño_product_nombre">VELADOR RENACENTISTA DE CAOBA</p>
+                <p class="CartaDiseño_precio">Precio: S/1000</p>
+                <p class="CartaDiseño_IA">IA Aproximación</p>
+                <button class="CartaDiseño_agregarCarrito">
+                    Agregar al carrito
+                </button>
+            </article>
+            
+            <article class="CartaDiseño">
+                <p class="CartaDiseño_fecha">Autor: AnaLim8</p>
+                <div class="CartaDiseño_iamgen-contenedor">
+                    <img class="CartaDiseño_iamgen" src="assets/imagenes/Fav_Articulo-3.jpg" alt="Imagen del diseño favorito 3">
+                    <button class="view-details" data-product="3">Ver detalles</button>
+                    <div class="CartaDiseño_botones-contenedor">
+                        <p>5.7</p>
+                        <div class="Rating_Vertical">
+                            <input type="radio" name="rating-3" id="star-5-3" value="5" />
+                            <label for="star-5-3" title="5 estrellas"></label>
+            
+                            <input type="radio" name="rating-3" id="star-4-3" value="4" />
+                            <label for="star-4-3" title="4 estrellas"></label>
+            
+                            <input type="radio" name="rating-3" id="star-3-3" value="3" />
+                            <label for="star-3-3" title="3 estrellas"></label>
+            
+                            <input type="radio" name="rating-3" id="star-2-3" value="2" />
+                            <label for="star-2-3" title="2 estrellas"></label>
+            
+                            <input type="radio" name="rating-3" id="star-1-3" value="1" />
+                            <label for="star-1-3" title="1 estrella"></label>
+                        </div>                        
                     </div>
-                    <p class="CartaDiseño_reseña">Reseñas 38</p>
-                    <p class="CartaDiseño_product_nombre">MOUSEPAD MINIMALISTA DE CUERO SINTÉTICO</p>
-                    <p class="CartaDiseño_precio">Precio: S/87</p>
-                    <p class="CartaDiseño_IA">IA Aproximación</p>
-                    <buttom class="CartaDiseño_agregarCarrito">
-                        Agregar al carrito
-                    </buttom>
-                </article>
+                </div>
+                <p class="CartaDiseño_reseña">Reseñas 68</p>
+                <p class="CartaDiseño_product_nombre">SILLON - GRAVITY FALLS</p>
+                <p class="CartaDiseño_precio">Precio: S/2400</p>
+                <p class="CartaDiseño_IA">IA Aproximación</p>
+                <button class="CartaDiseño_agregarCarrito">
+                    Agregar al carrito
+                </button>
+            </article>
+        </div>
+    </section>
 
-            </div>
-
-        </section>
+    <section class="Favoritos">
+        <div class="Favoritos_Encabezado">
+            <h1 class="Favoritos_titulo">En oferta</h1>
+            <select class="Favoritos_selector">
+                <option value="ultimos">Ver todos</option>
+                <option value="antiguos">Ordenar por los más antiguos</option>
+                <option value="populares">Ordenar por los más populares</option>
+            </select>
+        </div>
+        
+        <div class="Favoritos_contenedor">
+            <article class="CartaDiseño">
+                <p class="CartaDiseño_fecha">Autor: Kustkistan</p>
+                <div class="CartaDiseño_iamgen-contenedor">
+                    <img class="CartaDiseño_iamgen" src="assets/imagenes/Cat_Escritorio-minimalista.jpg" alt="Escritorio minimalista de cedro">
+                    <!-- BOTÓN AGREGADO -->
+                    <button class="view-details" data-product="4">Ver detalles</button>
+                    <div class="CartaDiseño_botones-contenedor">
+                        <p>5.7</p>
+                        <div class="Rating_Vertical">
+                            <input type="radio" name="rating-4" id="star-5-4" value="5" />
+                            <label for="star-5-4" title="5 estrellas"></label>
+            
+                            <input type="radio" name="rating-4" id="star-4-4" value="4" />
+                            <label for="star-4-4" title="4 estrellas"></label>
+            
+                            <input type="radio" name="rating-4" id="star-3-4" value="3" />
+                            <label for="star-3-4" title="3 estrellas"></label>
+            
+                            <input type="radio" name="rating-4" id="star-2-4" value="2" />
+                            <label for="star-2-4" title="2 estrellas"></label>
+            
+                            <input type="radio" name="rating-4" id="star-1-4" value="1" />
+                            <label for="star-1-4" title="1 estrella"></label>
+                        </div>                        
+                    </div>
+                </div>
+                <p class="CartaDiseño_reseña">Reseñas 28</p>
+                <p class="CartaDiseño_product_nombre">ESCRITORIO MINIMALISTA DE CEDRO</p>
+                <p class="CartaDiseño_precio">Precio: S/375</p>
+                <p class="CartaDiseño_IA">IA Aproximación</p>
+                <button class="CartaDiseño_agregarCarrito">
+                    Agregar al carrito
+                </button>
+            </article>
+            
+            <article class="CartaDiseño">
+                <p class="CartaDiseño_fecha">Autor: JosePa</p>
+                <div class="CartaDiseño_iamgen-contenedor">
+                    <img class="CartaDiseño_iamgen" src="assets/imagenes/Cat_Stand-escritorio.jpg" alt="Stand para escritorio de pino">
+                    <!-- BOTÓN AGREGADO -->
+                    <button class="view-details" data-product="5">Ver detalles</button>
+                    <div class="CartaDiseño_botones-contenedor">
+                        <p>5.7</p>
+                        <div class="Rating_Vertical">
+                            <input type="radio" name="rating-5" id="star-5-5" value="5" />
+                            <label for="star-5-5" title="5 estrellas"></label>
+            
+                            <input type="radio" name="rating-5" id="star-4-5" value="4" />
+                            <label for="star-4-5" title="4 estrellas"></label>
+            
+                            <input type="radio" name="rating-5" id="star-3-5" value="3" />
+                            <label for="star-3-5" title="3 estrellas"></label>
+            
+                            <input type="radio" name="rating-5" id="star-2-5" value="2" />
+                            <label for="star-2-5" title="2 estrellas"></label>
+            
+                            <input type="radio" name="rating-5" id="star-1-5" value="1" />
+                            <label for="star-1-5" title="1 estrella"></label>
+                        </div>                        
+                    </div>
+                </div>
+                <p class="CartaDiseño_reseña">Reseñas 8</p>
+                <p class="CartaDiseño_product_nombre">STAND PARA ESCRITORIO DE PINO</p>
+                <p class="CartaDiseño_precio">Precio: S/200</p>
+                <p class="CartaDiseño_IA">IA Aproximación</p>
+                <button class="CartaDiseño_agregarCarrito">
+                    Agregar al carrito
+                </button>
+            </article>
+            
+            <article class="CartaDiseño">
+                <p class="CartaDiseño_fecha">Autor: Youname</p>
+                <div class="CartaDiseño_iamgen-contenedor">
+                    <img class="CartaDiseño_iamgen" src="assets/imagenes/Cat_Mouse-pad.jpg" alt="Mousepad minimalista de cuero sintético">
+                    <!-- BOTÓN AGREGADO -->
+                    <button class="view-details" data-product="6">Ver detalles</button>
+                    <div class="CartaDiseño_botones-contenedor">
+                        <p>5.7</p>
+                        <div class="Rating_Vertical">
+                            <input type="radio" name="rating-6" id="star-5-6" value="5" />
+                            <label for="star-5-6" title="5 estrellas"></label>
+            
+                            <input type="radio" name="rating-6" id="star-4-6" value="4" />
+                            <label for="star-4-6" title="4 estrellas"></label>
+            
+                            <input type="radio" name="rating-6" id="star-3-6" value="3" />
+                            <label for="star-3-6" title="3 estrellas"></label>
+            
+                            <input type="radio" name="rating-6" id="star-2-6" value="2" />
+                            <label for="star-2-6" title="2 estrellas"></label>
+            
+                            <input type="radio" name="rating-6" id="star-1-6" value="1" />
+                            <label for="star-1-6" title="1 estrella"></label>
+                        </div>                        
+                    </div>
+                </div>
+                <p class="CartaDiseño_reseña">Reseñas 38</p>
+                <p class="CartaDiseño_product_nombre">MOUSEPAD MINIMALISTA DE CUERO SINTÉTICO</p>
+                <p class="CartaDiseño_precio">Precio: S/87</p>
+                <p class="CartaDiseño_IA">IA Aproximación</p>
+                <button class="CartaDiseño_agregarCarrito">
+                    Agregar al carrito
+                </button>
+            </article>
+        </div>
+    </section>
+    
 
         <section class="Favoritos">
             <div class="Favoritos_Encabezado">
@@ -307,6 +315,7 @@
                     <p class="CartaDiseño_fecha">Autor: Hawks</p>
                     <div class="CartaDiseño_iamgen-contenedor">
                         <img class="CartaDiseño_iamgen" src="assets/imagenes/Cat-Sofa-contempóraneo-blanco.jpg" alt="Sofa contemporáneo blanco con cojines">
+                        <button class="view-details" data-product="7">Ver detalles</button>
                         <div class="CartaDiseño_botones-contenedor">
                             <p>4</p>
                             <div class="Rating_Vertical">
@@ -340,6 +349,7 @@
                     <p class="CartaDiseño_fecha">Autor: Deniel99</p>
                     <div class="CartaDiseño_iamgen-contenedor">
                         <img class="CartaDiseño_iamgen" src="assets/imagenes/Cat_Sofa-cuero-marrón.jpg" alt="Sofa de cuero estilo chesterfield">
+                        <button class="view-details" data-product="8">Ver detalles</button>
                         <div class="CartaDiseño_botones-contenedor">
                             <p>5.7</p>
                             <div class="Rating_Vertical">
@@ -373,6 +383,7 @@
                     <p class="CartaDiseño_fecha">Autor: Sebas99</p>
                     <div class="CartaDiseño_iamgen-contenedor">
                         <img class="CartaDiseño_iamgen" src="assets/imagenes/Cat_Sofa-tela-gris.jpg" alt="Sofá de tela gris">
+                        <button class="view-details" data-product="9">Ver detalles</button>
                         <div class="CartaDiseño_botones-contenedor">
                             <p>5</p>
                             <div class="Rating_Vertical">
@@ -421,6 +432,7 @@
                     <p class="CartaDiseño_fecha">Autor: Noemi</p>
                     <div class="CartaDiseño_iamgen-contenedor">
                         <img class="CartaDiseño_iamgen" src="assets/imagenes/Cat_Armario-blanco.jpg" alt="Armario empotrado moderno blanco y acabado brillante">
+                        <button class="view-details" data-product="10">Ver detalles</button>
                         <div class="CartaDiseño_botones-contenedor">
                             <p>4</p>
                             <div class="Rating_Vertical">
@@ -454,6 +466,7 @@
                     <p class="CartaDiseño_fecha">Autor: Naraheli</p>
                     <div class="CartaDiseño_iamgen-contenedor">
                         <img class="CartaDiseño_iamgen" src="assets/imagenes/Cat_Armario-rustico-madero-maciza.jpg" alt="Armario rustica de madera maciza">
+                        <button class="view-details" data-product="11">Ver detalles</button>
                         <div class="CartaDiseño_botones-contenedor">
                             <p>5</p>
                             <div class="Rating_Vertical">
@@ -487,6 +500,7 @@
                     <p class="CartaDiseño_fecha">Autor: Bak</p>
                     <div class="CartaDiseño_iamgen-contenedor">
                         <img class="CartaDiseño_iamgen" src="assets/imagenes/Cat_Armario-moderno-pino.jpg" alt="Armario moderno de pino">
+                        <button class="view-details" data-product="12">Ver detalles</button>
                         <div class="CartaDiseño_botones-contenedor">
                             <p>5</p>
                             <div class="Rating_Vertical">
@@ -574,5 +588,9 @@
     
     </footer>
 
+
+   <script src="assets/catalogo.js">
+
+   </script>
 </body>
 </html>
