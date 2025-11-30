@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>IHC_Mis Diseños</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="Nav-sup">
+        <div class="Nav-sup-der">
+            <a href="#"><img src="assets/imagenes/Mundo.png">ES/Español</a>
+        </div>
+        <ul class="Nav-sup-izq">
+            <li><a href="cuenta_vendedor.html">Quiero vender</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+            <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+            <li><a href="ayuda.html">Contactenos</a></li>
+        </ul>
+    </header>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets/imagenes/LOGO_MARKETAR2.jpeg.png" alt="MarketAR Logo"></a>
+        </div>
+        <nav class="nav-links">
+            <a href="crear.html">Empieza a Crear</a>
+            <a href="catalogo.html">Ver Catálogo</a>
+            <a href="diseño.html">Mis diseños</a>
+        </nav>
+        <div class="icons">
+            <a href="descarga_app.html"><img src="assets/imagenes/descarga.png" alt="Buscar"></a>
+            <a href="inicia_sesion.html"><img src="assets/imagenes/IniciaSesion.png" alt="Usuario"></a>
+            <a href="carrito.html"><img src="assets/imagenes/carrito.png" alt="Carrito"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="TituloIntroducctorio">
+            <h1>Catálogo</h1>
+        </section>
+
+        <section class="ControlesCatalogo" style="background-color: #f9f9f9; padding: 20px; border-bottom: 1px solid #ddd;">
+            
+            <div class="BarraBusqueda" style="display: flex; gap: 10px; margin-bottom: 15px; justify-content: center;">
+                <button class="BarraBusqueda_boton">
+                    <img src="assets/Imagenes/Bus_Lupa.png" alt="Icono de lupa">
+                </button>
+                <input type="text" id="filtro-busqueda" class="BarraBusqueda_entrada" placeholder="Buscar por nombre...">
+                
+                <select id="orden-catalogo" class="BarraBusqueda_selector">
+                    <option value="ultimos">Ordenar por: Más recientes</option>
+                    <option value="antiguos">Ordenar por: Más antiguos</option>
+                    <option value="populares">Ordenar por: Más populares</option>
+                    <option value="barato">Precio: Menor a Mayor</option>
+                    <option value="caro">Precio: Mayor a Menor</option>
+                </select>
+            </div>
+
+            <div class="Filtros" style="display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap;">
+                
+                <select id="filtro-categoria" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                    <option value="">Todas las Categorías</option>
+                    <option value="Escritorio">Escritorios</option>
+                    <option value="Armario">Armarios</option>
+                    <option value="Cama">Camas</option>
+                    <option value="Sofa">Sofás</option>
+                    <option value="Silla">Sillas</option>
+                    <option value="Mesa">Mesas</option>
+                    <option value="Otros">Otros</option>
+                </select>
+
+                <select id="filtro-color" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                    <option value="">Todos los Colores</option>
+                    <option value="Blanco">Blanco</option>
+                    <option value="Negro">Negro</option>
+                    <option value="Madera">Madera / Marrón</option>
+                    <option value="Gris">Gris</option>
+                </select>
+
+                <div style="display: flex; align-items: center; gap: 10px; background: white; padding: 5px 10px; border-radius: 5px; border: 1px solid #ccc;">
+                    <label for="filtro-precio" style="font-family: 'Roboto', sans-serif;">Max: S/ <span id="precio-valor">10000</span></label>
+                    <input type="range" id="filtro-precio" min="0" max="10000" step="100" value="10000">
+                </div>
+
+                <button id="btn-limpiar" style="padding: 10px 20px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    Limpiar Filtros
+                </button>
+            </div>
+        </section>
+
+        <section class="Pagina">
+            <div id="contenedor-catalogo" class="Favoritos_contenedor" style="min-height: 400px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                </div>
+        </section>
+
+        <section class="Diseños">     
+            <nav class="Pagina">
+                <a href="#" class="Pagina_link Pagina_link--previous">◄ Anterior</a>
+                <a href="#" class="Pagina_link Pagina_link--active">1</a>
+                <a href="#" class="Pagina_link">2</a>
+                <a href="#" class="Pagina_link">3</a>
+                <span class="Pagina_ellipsis">...</span>
+                <a href="#" class="Pagina_link">6</a>
+                <a href="#" class="Pagina_link Pagina_link--next">Siguiente ►</a>
+            </nav>
+        </section>
+    </main>
+
+    <script src="assets/catalogo.js"></script>
+    <div id="modal-resumen">
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="assets/imagenes/Logo.png" alt="MarketAR Logo">
+                    <h3>MarketAR</h3>
+                </div>
+                <p>Es una empresa peruana dedicada a la comercialización principal de productos para el hogar.</p>
+                <p class="address">Carrera 30 # 14 - 76 | El Jardín Neiva - Huila <br> (+57) 318 865 6586 | ventas@marketar.com.co</p>
+            </div>
+            <div class="footer-column">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Tienda</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contáctanos</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

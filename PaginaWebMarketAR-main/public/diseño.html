@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>IHC_Mis Diseños</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="Nav-sup">
+        <div class="Nav-sup-der">
+            <a href="#"><img src="assets/imagenes/Mundo.png">ES/Español</a>
+        </div>
+        <ul class="Nav-sup-izq">
+            <li><a href="cuenta_vendedor.html">Quiero vender</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+            <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+            <li><a href="ayuda.html">Contactenos</a></li>
+        </ul>
+    </header>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets/imagenes/LOGO_MARKETAR2.jpeg.png" alt="MarketAR Logo"></a>
+        </div>
+        <nav class="nav-links">
+            <a href="crear.html">Empieza a Crear</a>
+            <a href="catalogo.html">Ver Catálogo</a>
+            <a href="diseño.html">Mis diseños</a>
+        </nav>
+        <div class="icons">
+            <a href="descarga_app.html">
+            <img src="assets/imagenes/descarga.png" alt="Buscar">
+            </a>
+            <a href="inicia_sesion.html">
+            <img src="assets/imagenes/IniciaSesion.png" alt="Usuario">
+            </a>
+            <a href="carrito.html">
+                <img src="assets/imagenes/carrito.png" alt="Carrito">
+            </a>  
+        </div>
+    </header>
+
+    <main>
+        <section class="BarraBusqueda">
+            <button class="BarraBusqueda_boton">
+                <img src="assets/imagenes/Bus_Lupa.png" alt="Icono de lupa">
+            </button>
+            <input type="text" class="BarraBusqueda_entrada" placeholder="Buscar...">
+            <select class="BarraBusqueda_selector">
+                <option value="ultimos">Ordenar por los últimos</option>
+                <option value="antiguos">Ordenar por los más antiguos</option>
+                <option value="populares">Ordenar por los más populares</option>
+            </select>
+        </section>
+        
+        <section class="Favoritos">
+            <div class="Favoritos_Encabezado">
+                <h1 class="Favoritos_titulo">Mis Favoritos</h1>
+                <select class="Favoritos_selector">
+                    <option value="ultimos">Ordenar por los más nuevos</option>
+                    <option value="antiguos">Ordenar por los más antiguos</option>
+                    <option value="populares">Ordenar por los más populares</option>
+                </select>
+            </div>
+            
+            <div class="Favoritos_contenedor">
+                <ul id="lista_favoritos_ui"></ul>
+            </div>
+        </section>
+        
+        <div>
+            <h1 class="Mis_disenos">Mis Diseños</h1>
+        </div>
+        
+        <section class="Pagina">
+            <div class="Favoritos_contenedor">    
+                <ul id="lista_disenos_ui"></ul>      
+            </div>
+        </section>
+
+        <section class="Diseños">
+            
+            <nav class="Pagina">
+                <a href="#" class="Pagina_link Pagina_link--previous">◄ Anterior</a>
+                <a href="#" class="Pagina_link Pagina_link--active">1</a>
+                <a href="#" class="Pagina_link">2</a>
+                <a href="#" class="Pagina_link">3</a>
+                <span class="Pagina_ellipsis">...</span>
+                <a href="#" class="Pagina_link">6</a>
+                <a href="#" class="Pagina_link Pagina_link--next">Siguiente ►</a>
+            </nav>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-column">
+            <div class="footer-logo">
+                <img src="assets/imagenes/Logo.png" alt="MarketAR Logo">
+                <h3>MarketAR</h3>
+            </div>
+            <p>
+                Es una empresa peruana dedicada a la comercialización principal de productos para el hogar.
+                Siempre dispuestos a suplir las necesidades de nuestros clientes.
+            </p>
+            <p class="address">
+                Carrera 30 # 14 - 76 | El Jardín Neiva - Huila <br>
+                (+57) 318 865 6586 | ventas@marketar.com.co
+            </p>
+            </div>
+        
+            <div class="footer-column">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Líderes</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-column">
+                <h4>Contáctanos</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </footer>
+    <script src="assets/diseño.js"></script>
+</body>
+</html>
