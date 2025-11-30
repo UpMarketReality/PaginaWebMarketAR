@@ -4,134 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito - MarketAR</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="imagenes/LOGO_MARKETAR2.jpeg.png" alt="MarketAR Logo"></a>
-        </div>
-        <nav class="nav-links">
-            <a href="crear.html">Empieza a Crear</a>
-            <a href="catalogo.html">Ver Catálogo</a>
-            <a href="diseño.html">Mis diseños</a>
-        </nav>
-        <div class="icons">
-            <a href="descarga_app.html">
-            <img src="imagenes/descarga.png" alt="Buscar">
-            </a>
-            <a href="inicia_sesion.html">
-            <img src="imagenes/IniciaSesion.png" alt="Usuario">
-            </a>
-            <a href="carrito.html">
-                <img src="imagenes/carrito.png" alt="Carrito">
-            </a>
-            
-        </div>
-    </header>
+<!-- NAV SUPERIOR -->
+<header class="Nav-sup">
+    <div class="Nav-sup-der">
+        <a href="#"><img src="assets/imagenes/Mundo.png"> ES/Español</a>
+    </div>
+    <ul class="Nav-sup-izq">
+        <li><a href="cuenta_vendedor.html">Quiero vender</a></li>
+        <li><a href="ayuda.html">Ayuda</a></li>
+        <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+        <li><a href="ayuda.html">Contáctenos</a></li>
+    </ul>
+</header>
 
-    
+<!-- NAV PRINCIPAL -->
+<header class="nav-main">
+    <div class="logo">
+        <a href="index.html"><img src="assets/imagenes/LOGO_MARKETAR2.jpeg.png" alt="MarketAR Logo"></a>
+    </div>
+
+    <!-- Botón menú hamburguesa -->
+    <button class="menu-toggle" aria-label="Menú">
+        ☰
+    </button>
+
+    <nav class="nav-links">
+        <a href="crear.html">Empieza a Crear</a>
+        <a href="catalogo.html">Ver Catálogo</a>
+        <a href="diseño.html">Mis diseños</a>
+    </nav>
+
+    <div class="icons">
+        <a href="descarga_app.html"><img src="assets/imagenes/descarga.png"></a>
+        <a href="inicia_sesion.html"><img src="assets/imagenes/IniciaSesion.png"></a>
+        <a href="carrito.html"><img src="assets/imagenes/carrito.png"></a>
+    </div>
+</header>
+
+
+    <!-- * CONTENIDO PRINCIPAL * -->
     <main class="container_carrito">
-        <h1>Tu carrito:</h1>
+
+        <h1>Tu carrito</h1>
 
         <div class="sort">
-            <label>Ordenar por los últimos ▾</label>
+            <select class="BarraBusqueda_selector">
+                <option value="ultimos">Ordenar por los últimos</option>
+                <option value="antiguos">Ordenar por los más antiguos</option>
+                <option value="populares">Ordenar por los más populares</option>
+            </select>
         </div>
 
-        <!-- PRODUCT CARD -->
         <section id="cart-items">
 
-            <div class="cart-item">
-                <img src="item1.jpg" class="product-img">
+            <div class="cart-item" data-id="1">
+                <img src="assets/imagenes/Cat_Armario-blanco.jpg" class="product-img">
 
                 <div class="details">
-                    <h2>ARMARIO BELLA Y LA BESTIA DE MELAMINE</h2>
+                    <h2>ARMARIO BLANCO DE MELAMINA</h2>
 
                     <div class="seller">
-                        <img src="seller.jpg">
+                        <img src="assets/imagenes/LOGO_DOMUSDECO.png">
                         <div>
                             <p>DomusDecoSAC</p>
                             <small>• 4.5 años en la aplicación <br>• 2.6k ventas</small>
-                            <span class="rating">⭐ 4.7</span>
                         </div>
                     </div>
 
-                    <div class="extra">
+                    <div class="extra_carrito">
                         <p><strong>Ubicación:</strong> Lima</p>
                         <p><strong>Entrega:</strong> 30 días</p>
-                        <p><strong>Zona mínima:</strong> S/. 45</p>
                     </div>
 
                     <div class="actions">
-                        <button class="btn-green">Aceptar oferta</button>
-                        <a href="chat.html">
-                        <button class="btn-white">Conversar</button>
-                        </a>
+                        <div class="quantity-controls">
+                            <button class="qty-btn" onclick="changeQty(1, -1)">-</button>
+                            <span class="qty" id="qty-1">1</span>
+                            <button class="qty-btn" onclick="changeQty(1, 1)">+</button>
+                        </div>
+                        <button class="btn-remove" onclick="removeFromCart(1)">Eliminar</button>
                     </div>
                 </div>
 
-                <div class="price">
-                    S/ 2400.00
-                </div>
+                <div class="price">S/ 2400.00</div>
             </div>
 
-            <!-- Segundo producto -->
-            <div class="cart-item">
-                <img src="item2.jpg" class="product-img">
-
-                <div class="details">
-                    <h2>ARMARIO BELLA Y LA BESTIA DE MELAMINE</h2>
-
-                    <div class="seller">
-                        <img src="seller2.jpg">
-                        <div>
-                            <p>RubiReal</p>
-                            <small>• 3.8 años en la aplicación <br>• 1.1k ventas</small>
-                            <span class="rating">⭐ 4.1</span>
-                        </div>
-                    </div>
-
-                    <div class="extra">
-                        <p><strong>Ubicación:</strong> Perú</p>
-                        <p><strong>Entrega:</strong> 30 días</p>
-                        <p><strong>Zona mínima:</strong> S/. 45</p>
-                    </div>
-
-                    <div class="actions">
-                        <button class="btn-green">Aceptar oferta</button>
-                        <button class="btn-white">Conversar</button>
-                    </div>
-                </div>
-
-                <div class="price">
-                    S/ 1900.00
-                </div>
+            <div class="cart-summary" id="cart-summary">
+                <p><strong>Total:</strong> S/ <span id="cart-total">0.00</span></p>
             </div>
 
         </section>
-
-        <!-- PAGINACIÓN -->
-        <div class="pagination">
-            <button class="pag-btn">Anterior</button>
-            <button class="pag-btn active">1</button>
-            <button class="pag-btn">2</button>
-            <button class="pag-btn">3</button>
-            <button class="pag-btn">...</button>
-            <button class="pag-btn">6</button>
-            <button class="pag-btn">Siguiente</button>
-        </div>
     </main>
 
-
+    <!-- FOOTER ------------------------------>
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-container">
             
             <div class="footer-column">
             <div class="footer-logo">
-                <img src="imagenes/Logo.png" alt="MarketAR Logo">
+                <img src="assets/imagenes/Logo.png" alt="MarketAR Logo">
                 <h3>MarketAR</h3>
             </div>
             <p>
@@ -166,7 +143,12 @@
     
     </footer>
 
-
-    <script src="script.js"></script>
+<script src="assets/script.js"></script>
+<script>
+document.querySelector(".menu-toggle")
+.addEventListener("click", () => {
+    document.querySelector(".nav-links").classList.toggle("active");
+});
+</script>
 </body>
 </html>
